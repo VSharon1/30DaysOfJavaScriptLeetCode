@@ -28,27 +28,27 @@ Constraints:
 /*
 Theory:
 
-Immediately Invoked Function Expression (IIFE):
-You can create a function and immediately execute it in Javascript.
-
-Function Hoisting:
-JavaScript has a feature called hoisting where a function can sometimes be used before it is initialized. 
-You can only do this if you declare functions with the function syntax, Arrow functions does not work!
-
 Closures:
 An important topic in JavaScript is the concept of closures. 
-When a function is created, it has access to a reference to all the variables declared around it, also known as it's lexical environment. 
-The combination of the function and its enviroment is called a closure.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (lexical environment).
+In other words, a closure gives a function access to its outer scope.
+The combination of the function and its environment is called a closure.
+
+Spread Operator:
+Is used to access all the passed arguments as an array and it is a good way to concatenate arrays.
+
+Higher Order Functions:
+A function that accepts a function and/or returns a function.
+
+Immediately Invoked Function Expression (IIFE):
+A function that has been created and immediately executed.
+
+Function Hoisting:
+Is a feature in JavaScript that sometimes allows a function to be used before it is initialised. 
+It only works with function syntax and not with arrow functions!
 
 Omit Return:
-If you can write the code in a single line, you can omit the return keyword. 
-
-Rest Arguments:
-You can use rest syntax to access all the passed arguments as an array.
-Why?
-It may not be immediately obvious why you would use this syntax because you can always just pass an array and get the same result.
-The primary use-case is for creating generic factory functions that accept any function as input and return a new version of the function with some specific modification.
-By the way, a function that accepts a function and/or returns a function is called a higher-order function, and they are very common in JavaScript.
+If a function can be written in one line, the return keyword can be omitted.
 */
 
 /*
