@@ -39,7 +39,42 @@ calls[i] is one of "increment", "decrement" and "reset"
 
 /*
 Theory:
+Solving the problem using a Class.
 
+A class is a template for creating objects with a set of properties and methods.
+
+In the following example the Couter is the name of the class.
+
+The constructor method is a special method that is called when an object is created based on the class.
+It initializes the object with properties init and initCopy. 
+The increment(), decrement()and reset() method are regular methods that can be called on an instance of the Counter class to get the output
+To create an object based on a class we use the new operator i.e. we create an object called createCounter based on the Counter class, passing in the init value as arguments to the constructor.
+
+    class Counter {
+        constructor(init) {
+            this.init = init;
+            this.initCopy = init;
+        }
+
+        increment() {
+            this.initCopy += 1;
+            return this.initCopy;
+        }
+
+        decrement() {
+            this.initCopy -= 1;
+            return this.initCopy;
+        }
+
+        reset() {
+            this.initCopy = this.init;
+            return this.initCopy;
+        }
+    }
+
+    const createCounter = function(init) {
+        return new Counter(init);
+    };
 */
 
 /*
